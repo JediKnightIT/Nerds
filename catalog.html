@@ -38,6 +38,7 @@
     <main class="main">
       <h1 class="main__title">Магазин готовых шаблонов</h1>
       <section class="filter">
+        <h2 class="visually-hidden">Фильтр выбора шаблона сайта</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">Стоимость:</legend>
@@ -59,6 +60,26 @@
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">Сетка:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="grid" value="adaptive">
+                  Адаптивная
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                  Фиксированная
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="grid" value="rubber">
+                  Резиновая
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">Особенности:</legend>
