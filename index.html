@@ -8,7 +8,9 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
+      <svg class="header__logo" width="160" height="65" aria-label="Логотип дизайн-студии Nerds">
+				<use xlink:href="img/sprite.svg#nerds-logo"></use>
+			</svg>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
@@ -18,7 +20,7 @@
             <a class="menu__link" href="#">Клиенты</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Магазин</a>
+            <a class="menu__link" href="catalog.html">Магазин</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -39,7 +41,7 @@
           <li class="promo__item">
             <div class="promo__item-description">
               <p class="promo__slogan">Долго, дорого, скрупулезно.</p>
-              <p class="promo__description">Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
+              <p class="promo__description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
               <a class="button button_promo-link" href="#">Узнать больше</a>
             </div>
             <div class="promo__item-img"></div>
@@ -93,8 +95,8 @@
       <section class="about">
         <div class="about__left">
           <h2 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара</h2>
-          <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.
+          <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
+            как роботы.
           </p>
           <h3 class="about__description">Выполняем заказы на разработку:</h3>
           <ul class="about__list">
@@ -113,9 +115,15 @@
           <p class="about__description">с 2004 года Любим точность во всем:</p>
           <table class="table">
             <tr class="table__row">
-              <td class="table__cell">146<sup>%</sup></td>
-              <td class="table__cell">100<sup>%</sup></td>
-              <td class="table__cell">50<sup>%</sup></td>
+              <td class="table__cell">146
+                <sup>%</sup>
+              </td>
+              <td class="table__cell">100
+                <sup>%</sup>
+              </td>
+              <td class="table__cell">50
+                <sup>%</sup>
+              </td>
             </tr>
             <tr class="table__row">
               <td class="table__cell">Уровень самоотдачи</td>
@@ -130,22 +138,30 @@
         <ul class="partners__list">
           <li class="partners__item">
             <a class="partners__link" href="#" aria-label="HTML Academy">
-              <img class="partners__img" src="img/logo/html-academy.png" width="199" height="68" alt="Логотип HTML Academy">
+              <svg class="partners__img" width="199" height="68" aria-label="Логотип HTML Academy">
+                <use xlink:href="img/sprite.svg#html-academy"></use>
+              </svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#" aria-label="Барбершоп Бородинский">
-              <img class="partners__img" src="img/logo/borodinski.png" width="209" height="90" alt="Логотип барбершопа Бородинский">
+              <svg class="partners__img" width="209" height="90" aria-label="Логотип барбершопа Бородинский">
+                <use xlink:href="img/sprite.svg#borodinski"></use>
+              </svg>
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__link" href="#" aria-label="Pink">
-              <img class="partners__img" src="img/logo/pink.png" width="185" height="52" alt="Логотип Pink">
+            <a class="partners__link" href="#" aria-label="Логотип Pink">
+              <svg class="partners__img" width="185" height="52" aria-label="Логотип Pink">
+                <use xlink:href="img/sprite.svg#pink"></use>
+              </svg>
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__link" href="#" aria-label="Mishka">
-              <img class="partners__img" src="img/logo/mishka.png" width="173" height="84" alt="Логотип Mishka">
+            <a class="partners__link" href="#" aria-label="Логотип Mishka">
+              <svg class="partners__img" width="173" height="84" aria-label="Логотип Mishka">
+                <use xlink:href="img/sprite.svg#mishka"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -157,33 +173,37 @@
         <div class="map__contacts">
           <h3 class="map__title">Nerds design studio</h3>
           <p class="map__addres">
-            191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8
-            тел. +7 (812) 275-75-75
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
           </p>
         </div>
       </article>
-      <footer class="footer">
-        <ul class="footer__socials">
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <img class="footer__img" src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <img class="footer__img" src="img/icon/facebook.svg" width="12" height="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <img class="footer__img" src="img/icon/instagram.svg" width="21" height="21" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-        <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
-        <p class="footer_description">Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
     </main>
+    <footer class="footer">
+      <ul class="footer__socials">
+        <li class="footer__item">
+          <a class="footer__link" href="#" aria-label="Вконтакте">
+            <svg class="footer__img" width="26" height="15" aria-label="Логотип Вконтакте">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#" aria-label="Фейсбук">
+            <svg class="footer__img" width="12" height="22" aria-label="Логотип Фейсбук">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#" aria-label="Инстаграм">
+            <svg class="footer__img" width="21" height="21" aria-label="Логотип Инстаграм">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
+      <p class="footer_description">Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
   </body>
 </html>
