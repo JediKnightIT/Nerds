@@ -63,6 +63,7 @@ img {
   font-weight: 500;
   line-height: 30px;
   color: #000;
+  text-transform: uppercase;
 }
 
 .menu__link:hover,
@@ -75,4 +76,39 @@ img {
 .menu__link:active,
 .basket__link:active {
   color: #a6a6a6;
+}
+
+/* ===== Стилизация контентной части основной страницы */
+.promo {
+  background-color: #eee;
+}
+
+.promo__list {
+  list-style: none;
+}
+
+.promo__slogan {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.button {
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
 }
