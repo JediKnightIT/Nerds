@@ -178,3 +178,20 @@ img {
   width: 350px;
   height: 100px;
 }
+
+.partners__list {
+  list-style: none;
+}
+
+.partners__link .partners__img {
+  opacity: 0.2;
+}
+
+.partners__link .partners__img:hover,
+.partners__link .partners__img:focus {
+  opacity: 1;
+}
+
+.partners__link .partners__img:active {
+  opacity: 0.1;
+}
