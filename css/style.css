@@ -195,3 +195,41 @@ img {
 .partners__link .partners__img:active {
   opacity: 0.1;
 }
+
+/* ===== Стилизация футера */
+.map__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map__addres {
+  line-height: 18px;
+  color: #666;
+}
+
+.footer__link {
+  background-color: #e1e1e1;
+}
+
+.footer__img {
+  fill: #fff;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  background-color: #e74246;
+}
+
+.footer__link:active {
+  opacity: 0.3;
+
+  background-color: #d7373b;
+}
+
+.footer__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
