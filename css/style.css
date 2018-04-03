@@ -112,3 +112,44 @@ img {
 
   background-color: #d7373b;
 }
+
+.services__list {
+  list-style: none;
+}
+
+.services__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button_apps {
+  background-color: #00ca74;
+}
+
+.button_apps:hover,
+.button_apps:focus {
+  background-color: #00bc6c;
+}
+
+.button_apps:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
+}
+
+.button_presentation {
+  background-color: #efc84a;
+}
+
+.button_presentation:hover,
+.button_presentation:focus {
+  background-color: #eab534;
+}
+
+.button_presentation:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #e5a722;
+}
