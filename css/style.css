@@ -1,0 +1,78 @@
+/* ===== Глобальные стили */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===== Стилизация хэдера */
+.header {
+  background-color: #eee;
+}
+
+.header__link .header__logo:hover,
+.header__link .header__logo:focus {
+  opacity: 0.8;
+}
+
+.header__link .header__logo:active {
+  opacity: 0.3;
+}
+
+.menu__list,
+.basket {
+  list-style: none;
+}
+
+.menu__link,
+.basket__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.basket__link:hover,
+.basket__link:focus {
+  color: #fb565a;
+}
+
+.menu__link:active,
+.basket__link:active {
+  color: #a6a6a6;
+}
