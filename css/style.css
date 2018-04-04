@@ -201,7 +201,129 @@ img {
 }
 
 /* ===== Стилизация контентной части страницы каталога*/
+.promo__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
 
+.filter__legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.filter__list {
+  list-style: none;
+}
+
+.filter__label {
+  color: #283136;
+  line-height: 20px;
+}
+
+.button_filter {
+  color: #000;
+
+  background-color: #eee;
+}
+
+.button_filter:hover,
+.button_filter:focus {
+  background-color: #dfdfdf;
+}
+
+.button_filter:active {
+  color: #959595;
+
+  background-color: #d5d5d5;
+}
+
+.sorting__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.sorting__list {
+  list-style: none;
+}
+
+.sorting__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #b2b2b2;
+  text-transform: uppercase;
+}
+
+.sorting__link:hover,
+.sorting__link:focus {
+  color: #666;
+}
+
+.sorting__link:active {
+  color: #000;
+}
+
+.sorting__link_active {
+  color: #000;
+}
+
+.triangle-icon {
+  fill: #ededed;
+}
+
+.triangle-icon:hover,
+.triangle-icon:focus {
+  fill: #a6a6a6;
+}
+
+.triangle-icon:active,
+.triangle-icon_active {
+  fill: #231f20;
+}
+
+.templates__title-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.templates__description {
+  line-height: 18px;
+  color: #666;
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__link {
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+
+  background-color: #eee;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination__link:active {
+  color: #959595;
+
+  background-color: #d5d5d5;
+}
+
+.pagination__link_active {
+  border: 2px solid #dbdbdb;
+
+  background-color: #fff;
+}
 
 /* ===== Стилизация футера */
 .map__title {
