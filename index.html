@@ -224,8 +224,13 @@
         <label class="feedback__label">Текст письма:
           <textarea class="feedback__textarea" name="message" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="feedback__button" type="submit">Отправить</button>
+        <button class="button feedback__button" type="submit">Отправить</button>
       </form>
+      <button class="feedback__close" type="button">
+        <svg class="feedback__close-icon" width="21" height="21" aria-label="Кнопка закрытия модального окна">
+          <use xlink:href="img/sprite.svg#close-cross"></use>
+        </svg>
+      </button>
     </section>
   </body>
 </html>
