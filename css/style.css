@@ -38,9 +38,21 @@ img {
   max-width: 100%;
 }
 
+
 /* ===== Стилизация хэдера */
 .header {
   background-color: #eee;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 49px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .header__link .header__logo:hover,
@@ -52,13 +64,30 @@ img {
   opacity: 0.3;
 }
 
-.menu__list,
-.basket {
+.header__logo {
+  margin-right: 200px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.menu__item {
+  width: 110px;
+}
+
 .menu__link,
-.basket__link {
+.basket-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -68,13 +97,13 @@ img {
 
 .menu__link:hover,
 .menu__link:focus,
-.basket__link:hover,
-.basket__link:focus {
+.basket-link:hover,
+.basket-link:focus {
   color: #fb565a;
 }
 
 .menu__link:active,
-.basket__link:active {
+.basket-link:active {
   color: #a6a6a6;
 }
 
