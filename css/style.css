@@ -112,14 +112,46 @@ img {
   background-color: #eee;
 }
 
+.promo__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 .promo__list {
+  display: flex;
+  width: 4000px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.promo__item {
+  display: flex;
+  width: 100%;
+}
+
+.promo__item-description {
+  flex-basis: 400px;
+  margin-right: 32px;
+  padding-top: 65px;
+}
+
 .promo__slogan {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+}
+
+.promo__description {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -144,6 +176,19 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+}
+
+.button_promo-link {
+  padding: 16px 53px;
+}
+
+.promo__item-img {
+  flex-basis: 698px;
+  height: 415px;
+
+  background-image: url("../img/index/slider-1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .services__list {
