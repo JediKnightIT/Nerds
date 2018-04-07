@@ -286,29 +286,100 @@ img {
   background-color: #e5a722;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  border-bottom: 2px solid #eee;
+}
+
+.about__left {
+  flex-basis: 660px;
+  padding-top: 34px;
+  letter-spacing: 0.1px;
+}
+
 .about__title {
+  margin: 0;
+  margin-bottom: 33px;
+
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
+.about__text {
+  margin: 0;
+  margin-bottom: 39px;
+}
+
 .about__description {
+  margin: 0;
+  margin-bottom: 24px;
+
   font: inherit;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .about__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+
   list-style: none;
 }
 
+.about__item {
+  margin-bottom: 24px;
+
+  letter-spacing: 0.2px;
+}
+
 .about__services {
+  margin: 0;
+
   font: inherit;
 }
 
+.about__right {
+  flex-basis: 360px;
+  padding-top: 244px;
+
+  background-image: url("../img/index/nerds-section.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.about__description_align {
+  text-align: center;
+}
+
 .table {
-  width: 350px;
-  height: 100px;
+  width: 360px;
+  padding-top: 24px;
+}
+
+.table__row {
+  text-align: left;
+}
+
+.table__cell {
+  padding-right: 16px;
+  padding-bottom: 27px;
+
+  font-size: 45px;
+}
+
+.table__percent {
+  font-size: 29px;
+}
+
+.table__cell_regular {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .partners__list {
