@@ -294,6 +294,7 @@ a {
 .about__left {
   flex-basis: 660px;
   padding-top: 34px;
+
   letter-spacing: 0.1px;
 }
 
@@ -398,6 +399,7 @@ a {
 
 .partners__item {
   position: relative;
+
   flex-basis: 260px;
   margin-right: 40px;
 }
@@ -655,6 +657,7 @@ a {
   height: 80px;
 
   background-color: #e1e1e1;
+
   border-radius: 50%;
 
 }
@@ -685,21 +688,102 @@ a {
 
 .footer_description {
   margin: 0;
+
   letter-spacing: 0.2px;
 }
 
 /* ===== Стилизация модального окна */
 .feedback {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
   display: none;
+  width: 960px;
+  padding: 70px 100px;
+
+  background-color: #fff;
+
+  box-sizing: border-box;
+  box-shadow: 0 15px 40px 8px #5e5f5f;
 }
 
-.footer__text {
+.feedback__text {
+  margin: 0;
+  margin-bottom: 21px;
+
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
+.feedback__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
 .feedback__label {
+  flex-basis: 360px;
+
   font-weight: 700;
   line-height: 18px;
+}
+
+.feedback__input,
+.feedback__textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #d7dcde;
+  padding: 15px;
+
+  border-radius: 3px;
+
+  box-sizing: border-box;
+}
+
+.feedback__textarea {
+  min-height: 115px;
+  margin-bottom: 46px;
+
+  resize: none;
+}
+
+.feedback__button {
+  padding: 15px 80px;
+}
+
+.feedback__close {
+  position: absolute;
+  top: 75px;
+  right: 83px;
+
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.feedback__close-icon {
+  fill: #fb565a;
+
+  opacity: 0.3;
+}
+
+.feedback__close:hover .feedback__close-icon,
+.feedback__close:focus .feedback__close-icon {
+  fill: #fb565a;
+
+  opacity: 1;
+}
+
+.feedback__close:active .feedback__close-icon {
+  fill: #fb565a;
+
+  opacity: 0.1;
 }
