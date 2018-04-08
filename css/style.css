@@ -34,11 +34,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
-
 /* ===== Стилизация хэдера */
 .header {
   background-color: #eee;
@@ -570,7 +565,38 @@ img {
 }
 
 /* ===== Стилизация футера */
+.map {
+  position: relative;
+
+  padding-top: 79px;
+}
+
+.map__img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.map__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 54px 20px;
+  box-sizing: border-box;
+}
+
+.map__contacts {
+  width: 320px;
+  padding: 50px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+}
+
 .map__title {
+  margin: 0;
+  margin-bottom: 22px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -578,8 +604,22 @@ img {
 }
 
 .map__addres {
+  margin: 0;
+  margin-bottom: 37px;
+
   line-height: 18px;
   color: #666;
+
+  letter-spacing: 0.3px;
+}
+
+.map__phone {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.button__modal {
+  padding: 16px 44px;
 }
 
 .footer__link {
