@@ -442,10 +442,18 @@ a {
 }
 
 /* ===== Стилизация контентной части страницы каталога*/
+.promo-inner {
+  padding-top: 50px;
+  padding-bottom: 108px;
+}
+
 .promo__title {
+  margin: 0;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+  text-align: center;
 }
 
 .filter__legend {
