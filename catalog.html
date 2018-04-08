@@ -41,219 +41,223 @@
       <section class="promo promo-inner">
         <h2 class="promo__title">Магазин готовых шаблонов</h2>
       </section>
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр выбора шаблона сайта</h2>
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Стоимость:</legend>
-            <div class="range">
-              <div class="range__scale">
-                <div class="range__bar"></div>
+      <div class="main__wrapper">
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр выбора шаблона сайта</h2>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Стоимость:</legend>
+              <div class="range">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle-min"></div>
+                <div class="range__toggle range__toggle-max"></div>
               </div>
-              <div class="range__toggle range__toggle-min"></div>
-              <div class="range__toggle range__toggle-max"></div>
-            </div>
-            <div class="price-controls">
-              <label class="price-controls__label" for="min-price" aria-label="Минимальная стоимость">От
-                <input class="price-controls__input" id="min-price" type="text" name="minimum-price" placeholder="0">
-              </label>
-              <label class="price-controls__label price-controls__label_padding" for="max-price" aria-label="Максимальная стоимость">До
-                <input class="price-controls__input" id="max-price" type="text" name="maximum-price" placeholder="15 000">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Сетка:</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive">
-                  Адаптивная
+              <div class="price-controls">
+                <label class="price-controls__label" for="min-price" aria-label="Минимальная стоимость">От
+                  <input class="price-controls__input" id="min-price" type="text" name="minimum-price" placeholder="0">
                 </label>
+                <label class="price-controls__label price-controls__label_padding" for="max-price" aria-label="Максимальная стоимость">До
+                  <input class="price-controls__input" id="max-price" type="text" name="maximum-price" placeholder="15 000">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Сетка:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="radio" name="grid" value="adaptive">
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="radio" name="grid" value="rubber">
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Особенности:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="checkbox" name="slider">
+                    Слайдер
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="checkbox" name="advantage-block">
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="checkbox" name="news">
+                    Новости
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="checkbox" name="gallery">
+                    Галерея
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="visually-hidden" type="checkbox" name="basket">
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button_filter" type="submit">Показать</button>
+          </form>
+        </section>
+        <div class="catalog-wrapper">
+          <section class="sorting">
+            <h2 class="visually-hidden">Секция сортировки шаблонов сайтов</h2>
+            <p class="sorting__text">Сортировать:</p>
+            <ul class="sorting__list">
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link_active" href="#">По цене</a>
               </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
-                  Фиксированная
-                </label>
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">По типу</a>
               </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="grid" value="rubber">
-                  Резиновая
-                </label>
+              <li class="sorting__item">
+                <a class="sorting__link" href="#">По названию</a>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Особенности:</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="slider">
-                  Слайдер
-                </label>
+            <div class="sorting__wrap">
+              <a class="triangle" href="#" aria-label="Сортировка по убыванию">
+                <svg class="triangle-icon triangle-icon_active" width="11" height="10">
+                  <use xlink:href="img/sprite.svg#triangle-down"></use>
+                </svg>
+              </a>
+              <a class="triangle triangle_active" href="#" aria-label="Сортировка по возрастанию">
+                <svg class="triangle-icon" width="11" height="10">
+                  <use xlink:href="img/sprite.svg#triangle-up"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+          <section class="templates">
+            <h2 class="visually-hidden">Каталог шаблонов сайтов</h2>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт поиска жилья в городке Седона</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/sedona.jpg" width="360" height="576" alt="Шаблон сайта поиска жилья">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">Sedona</h4>
+                </a>
+                <p class="templates__description">Информационный сайт для туристов</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт мобильного приложения Пинк</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/pink.jpg" width="360" height="576" alt="Шаблон сайта мобильного приложения">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">Pink App</h4>
+                </a>
+                <p class="templates__description">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт барбешопа Бородинский</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/borodinski.jpg" width="360" height="576" alt="Шаблон сайта барбершопа">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">Barbershop</h4>
+                </a>
+                <p class="templates__description">Сайт салоны красоты. Для мужчин, да.</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт интернет-магазина вязаных игрушек Мишка</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/mishka.jpg" width="360" height="576" alt="Шаблон сайта интернет-магазина">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">Mishka</h4>
+                </a>
+                <p class="templates__description">Интернет-магазин вязаных игрушек</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт обучающих курсов А Плюс</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/a-plus.jpg" width="360" height="576" alt="Шаблон сайта обучающих курсов">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">A Plus</h4>
+                </a>
+                <p class="templates__description">Лендинг курсов повышения квалификации</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+            <article class="templates__item">
+              <h3 class="visually-hidden">Сайт производителя кваса Кваст</h3>
+              <svg class="browser-icon" width="360" height="40">
+                <use xlink:href="img/sprite.svg#browser"></use>
+              </svg>
+              <img class="templates__img" src="img/catalog/kvass.jpg" width="360" height="576" alt="Шаблон сайта производителя кваса">
+              <div class="templates__wrap">
+                <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
+                  <h4 class="templates__title">Кваст</h4>
+                </a>
+                <p class="templates__description">Промо-сайт производителя крафтового кваса</p>
+                <a class="button templates__link" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </section>
+          <section class="pagination">
+            <h2 class="visually-hidden">Переход по страницам сайта</h2>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link_active" href="#">1</a>
               </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="advantage-block">
-                  Блок преимуществ
-                </label>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
               </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="news">
-                  Новости
-                </label>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
               </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="gallery">
-                  Галерея
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="basket">
-                  Корзина
-                </label>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">Следующая</a>
               </li>
             </ul>
-          </fieldset>
-          <button class="button button_filter" type="submit">Показать</button>
-        </form>
-      </section>
-      <section class="sorting">
-        <h2 class="visually-hidden">Секция сортировки шаблонов сайтов</h2>
-        <p class="sorting__text">Сортировать:</p>
-        <ul class="sorting__list">
-          <li class="sorting__item">
-            <a class="sorting__link sorting__link_active" href="#">По цене</a>
-          </li>
-          <li class="sorting__item">
-            <a class="sorting__link" href="#">По типу</a>
-          </li>
-          <li class="sorting__item">
-            <a class="sorting__link" href="#">По названию</a>
-          </li>
-        </ul>
-        <div class="sorting__wrap">
-          <a class="triangle" href="#" aria-label="Сортировка по убыванию">
-            <svg class="triangle-icon triangle-icon_active" width="11" height="10">
-              <use xlink:href="img/sprite.svg#triangle-down"></use>
-            </svg>
-          </a>
-          <a class="triangle triangle_active" href="#" aria-label="Сортировка по возрастанию">
-            <svg class="triangle-icon" width="11" height="10">
-              <use xlink:href="img/sprite.svg#triangle-up"></use>
-            </svg>
-          </a>
+          </section>
         </div>
-      </section>
-      <section class="templates">
-        <h2 class="visually-hidden">Каталог шаблонов сайтов</h2>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт поиска жилья в городке Седона</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/sedona.jpg" width="360" height="576" alt="Шаблон сайта поиска жилья">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">Sedona</h4>
-            </a>
-            <p class="templates__description">Информационный сайт для туристов</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт мобильного приложения Пинк</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/pink.jpg" width="360" height="576" alt="Шаблон сайта мобильного приложения">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">Pink App</h4>
-            </a>
-            <p class="templates__description">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт барбешопа Бородинский</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/borodinski.jpg" width="360" height="576" alt="Шаблон сайта барбершопа">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">Barbershop</h4>
-            </a>
-            <p class="templates__description">Сайт салоны красоты. Для мужчин, да.</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт интернет-магазина вязаных игрушек Мишка</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/mishka.jpg" width="360" height="576" alt="Шаблон сайта интернет-магазина">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">Mishka</h4>
-            </a>
-            <p class="templates__description">Интернет-магазин вязаных игрушек</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт обучающих курсов А Плюс</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/a-plus.jpg" width="360" height="576" alt="Шаблон сайта обучающих курсов">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">A Plus</h4>
-            </a>
-            <p class="templates__description">Лендинг курсов повышения квалификации</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-        <article class="templates__item">
-          <h3 class="visually-hidden">Сайт производителя кваса Кваст</h3>
-          <svg class="browser-icon" width="360" height="40">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-          <img class="templates__img" src="img/catalog/kvass.jpg" width="360" height="576" alt="Шаблон сайта производителя кваса">
-          <div class="templates__wrap">
-            <a class="templates__title-link" href="#" aria-label="Ссылка на страницу с информацией о шаблоне">
-              <h4 class="templates__title">Кваст</h4>
-            </a>
-            <p class="templates__description">Промо-сайт производителя крафтового кваса</p>
-            <a class="button templates__link" href="#">9 900 руб.</a>
-          </div>
-        </article>
-      </section>
-      <section class="pagination">
-        <h2 class="visually-hidden">Переход по страницам сайта</h2>
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link_active" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <article class="map">

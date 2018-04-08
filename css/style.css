@@ -456,10 +456,84 @@ a {
   text-align: center;
 }
 
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+
+.filter {
+  flex-basis: 300px;
+}
+
+.filter__fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
 .filter__legend {
+  margin-bottom: 48px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.range {
+  position: relative;
+  width: 260px;
+  min-height: 80px;
+
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.range__scale {
+  position: absolute;
+  top: 39px;
+  left: 18px;
+
+  width: 220px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.range__bar {
+  width: 151px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.range__toggle {
+  position: absolute;
+  top: 30px;
+
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+
+  background-color: #ababab;
+  border-radius: 50%;
+
+  box-shadow: 0 2px 3px 0 rgba(171,171,171,.9);
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  transform: scale(1.1);
+}
+
+.range__toggle-min {
+  left: 18px;
+}
+
+.range__toggle-max {
+  right: 80px;
 }
 
 .filter__list {
@@ -486,6 +560,10 @@ a {
   color: #959595;
 
   background-color: #d5d5d5;
+}
+
+.catalog-wrapper {
+  flex-basis: 760px;
 }
 
 .sorting__text {
