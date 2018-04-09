@@ -64,25 +64,19 @@
               </div>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend">Сетка:</legend>
+              <legend class="filter__legend filter__legend_margin">Сетка:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="grid" value="adaptive">
-                    Адаптивная
-                  </label>
+                  <input class="visually-hidden filter__input filter__input-radio" id="site-adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <label class="filter__label filter__label-radio" for="site-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="grid" value="fixed">
-                    Фиксированная
-                  </label>
+                  <input class="visually-hidden filter__input filter__input-radio" id="site-fixed" type="radio" name="grid" value="fixed">
+                  <label class="filter__label filter__label-radio" for="site-fixed">Фиксированная</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="grid" value="rubber">
-                    Резиновая
-                  </label>
+                  <input class="visually-hidden filter__input filter__input-radio" id="site-rubber" type="radio" name="grid" value="rubber">
+                  <label class="filter__label filter__label-radio" for="site-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -90,34 +84,24 @@
               <legend class="filter__legend">Особенности:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="slider">
-                    Слайдер
-                  </label>
+                  <input class="visually-hidden filter__input" id="slider" type="checkbox" name="slider">
+                  <label class="filter__label" for="slider">Слайдер</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="advantage-block">
-                    Блок преимуществ
-                  </label>
+                  <input class="visually-hidden filter__input" id="advantage-block" type="checkbox" name="advantage-block">
+                  <label class="filter__label" for="advantage-block">Блок преимуществ</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="news">
-                    Новости
-                  </label>
+                  <input class="visually-hidden filter__input" id="news" type="checkbox" name="news">
+                  <label class="filter__label" for="news">Новости</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="gallery">
-                    Галерея
-                  </label>
+                  <input class="visually-hidden filter__input" id="gallery" type="checkbox" name="gallery">
+                  <label class="filter__label" for="gallery">Галерея</label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="basket">
-                    Корзина
-                  </label>
+                  <input class="visually-hidden filter__input" id="basket" type="checkbox" name="basket">
+                  <label class="filter__label" for="basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
