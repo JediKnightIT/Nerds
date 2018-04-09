@@ -456,10 +456,14 @@ a {
   text-align: center;
 }
 
-.main__wrapper {
+.main__wrapper-catalog {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 56px;
+  box-sizing: border-box;
 }
 
 .filter {
@@ -468,6 +472,7 @@ a {
 
 .filter__fieldset {
   margin: 0;
+  margin-bottom: 54px;
   border: none;
   padding: 0;
 }
@@ -484,8 +489,10 @@ a {
 
 .range {
   position: relative;
+
   width: 260px;
   min-height: 80px;
+  margin-bottom: 14px;
 
   background-color: #eee;
   border-radius: 3px;
@@ -534,6 +541,31 @@ a {
 
 .range__toggle-max {
   right: 80px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.price-controls__label {
+  flex-basis: 114px;
+
+  text-transform: uppercase;
+}
+
+.price-controls__input {
+  width: 80px;
+  min-height: 38px;
+  margin-left: 7px;
+  border: none;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: #eee;
+  border-radius: 3px;
 }
 
 .filter__list {
