@@ -672,14 +672,37 @@ a {
   flex-basis: 760px;
 }
 
+.sorting {
+  display: flex;
+  padding-bottom: 55px;
+}
+
 .sorting__text {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sorting__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 320px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.sorting__item {
+  margin-right: 26px;
+}
+
+.sorting__item:last-child {
+  margin-right: 0;
 }
 
 .sorting__link {
@@ -700,6 +723,12 @@ a {
 
 .sorting__link_active {
   color: #000;
+}
+
+.sorting__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40px;
 }
 
 .triangle-icon {
