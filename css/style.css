@@ -822,15 +822,28 @@ a {
 }
 
 .pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
   list-style: none;
 }
 
+.pagination__item {
+  margin-right: 12px;
+}
+
 .pagination__link {
+  display: inline-block;
+  padding: 10px 20px;
+
   font-weight: 500;
   line-height: 30px;
   color: #000;
 
   background-color: #eee;
+  border-radius: 2px;
 }
 
 .pagination__link:hover,
@@ -845,16 +858,26 @@ a {
 }
 
 .pagination__link_active {
-  border: 2px solid #dbdbdb;
+  padding: 7px 17px;
+  box-sizing: border-box;
 
   background-color: #fff;
+  border: 3px solid #dbdbdb;
+}
+
+.pagination__link_next {
+  width: 260px;
+  box-sizing: border-box;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ===== Стилизация футера */
 .map {
   position: relative;
 
-  padding-top: 79px;
+  padding-top: 59px;
 
   overflow: hidden;
 }
