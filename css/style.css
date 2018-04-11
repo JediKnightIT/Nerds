@@ -757,7 +757,8 @@ a {
   flex-basis: 360px;
 }
 
-.templates__item:hover .browser-icon {
+.templates__item:hover .browser-icon,
+.templates__item:hover .templates__wrap {
   opacity: 1;
 }
 
@@ -775,17 +776,24 @@ a {
   box-sizing: border-box;
 }
 
-
 .templates__wrap {
   position: absolute;
   right: 0;
   bottom: 8px;
   left: 0;
 
+  padding: 27px 60px 43px;
+
+  text-align: center;
+
   background-color: #eee;
+
+  opacity: 0;
 }
 
 .templates__title-link {
+  display: inline-block;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -793,9 +801,21 @@ a {
   text-transform: uppercase;
 }
 
+.templates__title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
 .templates__description {
+  margin: 0;
+  margin-bottom: 30px;
+
   line-height: 18px;
   color: #666;
+}
+
+.templates__link {
+  padding: 16px 61px;
 }
 
 .pagination__list {
