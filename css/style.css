@@ -755,6 +755,7 @@ a {
   position: relative;
 
   flex-basis: 360px;
+  margin-bottom: 26px;
 }
 
 .templates__item:hover .browser-icon,
@@ -766,6 +767,7 @@ a {
   position: absolute;
 
   opacity: 0.12;
+  transition: 0.3s;
 }
 
 .templates__img {
@@ -789,6 +791,7 @@ a {
   background-color: #eee;
 
   opacity: 0;
+  transition: 0.3s;
 }
 
 .templates__title-link {
