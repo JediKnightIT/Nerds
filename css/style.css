@@ -745,6 +745,46 @@ a {
   fill: #231f20;
 }
 
+.templates {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.templates__item {
+  position: relative;
+
+  flex-basis: 360px;
+}
+
+.templates__item:hover .browser-icon {
+  opacity: 1;
+}
+
+.browser-icon {
+  position: absolute;
+
+  opacity: 0.12;
+}
+
+.templates__img {
+  margin-top: 39px;
+
+  border: 1px solid #e5e5e5;
+
+  box-sizing: border-box;
+}
+
+
+.templates__wrap {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+
+  background-color: #eee;
+}
+
 .templates__title-link {
   font-size: 18px;
   font-weight: 700;
