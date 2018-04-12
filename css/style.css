@@ -67,7 +67,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 800px;
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 .menu__list {
@@ -117,6 +117,18 @@ a {
 .menu__link:active,
 .basket-link:active {
   color: #a6a6a6;
+}
+
+.basket-link {
+  position: relative;
+}
+
+.basket-link__icon {
+  position: absolute;
+  left: -40px;
+  top: 3px;
+
+  fill: #a6a6a6;
 }
 
 /* ===== Стилизация контентной части основной страницы */
