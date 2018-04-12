@@ -88,8 +88,9 @@ a {
 .menu__item_active::after {
   content: "";
   position: absolute;
-  left: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
 
   height: 2px;
 
@@ -125,8 +126,8 @@ a {
 
 .basket-link__icon {
   position: absolute;
-  left: -40px;
   top: 3px;
+  left: -40px;
 
   fill: #a6a6a6;
 }
