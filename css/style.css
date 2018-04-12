@@ -81,6 +81,21 @@ a {
   list-style: none;
 }
 
+.menu__item {
+  position: relative;
+}
+
+.menu__item_active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background-color: #fb565a;
+}
+
 .menu__link,
 .basket-link {
   font-size: 16px;
