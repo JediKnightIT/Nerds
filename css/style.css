@@ -919,9 +919,15 @@ a {
 .map {
   position: relative;
 
-  padding-top: 59px;
+  min-height: 416px;
+  padding-top: 79px;
+}
 
-  overflow: hidden;
+.map__interactive {
+  position: absolute;
+
+  width: 100%;
+  height: 416px;
 }
 
 .map__img {
@@ -939,6 +945,8 @@ a {
 }
 
 .map__contacts {
+  position: absolute;
+
   width: 320px;
   padding: 50px;
   box-sizing: border-box;
