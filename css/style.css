@@ -1052,8 +1052,8 @@ a {
 /* ===== Стилизация модального окна */
 .feedback {
   position: fixed;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%,-50%);
 
   display: none;
@@ -1064,6 +1064,23 @@ a {
 
   box-sizing: border-box;
   box-shadow: 0 15px 40px 8px #5e5f5f;
+}
+
+.feedback__show {
+  display: block;
+
+  animation-name: show;
+  animation-duration: 0.6s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .feedback__text {
