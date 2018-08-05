@@ -25,7 +25,7 @@
             <li class="menu__item">
               <a class="menu__link" href="#">Клиенты</a>
             </li>
-            <li class="menu__item menu__item_active">
+            <li class="menu__item menu__item--active">
               <a class="menu__link" href="catalog.html">Магазин</a>
             </li>
             <li class="menu__item">
@@ -63,13 +63,13 @@
                 <label class="price-controls__label" for="min-price" aria-label="Минимальная стоимость">От
                   <input class="price-controls__input" id="min-price" type="text" name="minimum-price" placeholder="0">
                 </label>
-                <label class="price-controls__label price-controls__label_padding" for="max-price" aria-label="Максимальная стоимость">До
+                <label class="price-controls__label" for="max-price" aria-label="Максимальная стоимость">До
                   <input class="price-controls__input" id="max-price" type="text" name="maximum-price" placeholder="15 000">
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filter__fieldset filter__fieldset_margin">
-              <legend class="filter__legend filter__legend_margin">Сетка:</legend>
+            <fieldset class="filter__fieldset filter__fieldset--margin">
+              <legend class="filter__legend filter__legend--margin">Сетка:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
                   <input class="visually-hidden filter__input filter__input-radio" id="site-adaptive" type="radio" name="grid" value="adaptive" checked>
@@ -86,7 +86,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend filter__legend_margin">Особенности:</legend>
+              <legend class="filter__legend filter__legend--margin">Особенности:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
                   <input class="visually-hidden filter__input filter__input-checkbox" id="slider" type="checkbox" name="slider" checked>
@@ -110,7 +110,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button_filter" type="submit">Показать</button>
+            <button class="button button--filter" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog-wrapper">
@@ -119,7 +119,7 @@
             <p class="sorting__text">Сортировать:</p>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <a class="sorting__link sorting__link_active" href="#">По цене</a>
+                <a class="sorting__link sorting__link--active" href="#">По цене</a>
               </li>
               <li class="sorting__item">
                 <a class="sorting__link" href="#">По типу</a>
@@ -134,7 +134,7 @@
                   <use xlink:href="img/sprite.svg#triangle-down"></use>
                 </svg>
               </a>
-              <a class="triangle triangle_active" href="#" aria-label="Сортировка по возрастанию">
+              <a class="triangle" href="#" aria-label="Сортировка по возрастанию">
                 <svg class="triangle-icon" width="11" height="10">
                   <use xlink:href="img/sprite.svg#triangle-up"></use>
                 </svg>
@@ -232,7 +232,7 @@
             <h2 class="visually-hidden">Переход по страницам сайта</h2>
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link pagination__link_active" href="#">1</a>
+                <a class="pagination__link pagination__link--active" href="#">1</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">2</a>
@@ -241,7 +241,7 @@
                 <a class="pagination__link" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link pagination__link_next" href="#">Следующая</a>
+                <a class="pagination__link pagination__link--next" href="#">Следующая</a>
               </li>
             </ul>
           </section>
@@ -289,7 +289,7 @@
         </ul>
         <div class="footer__info">
           <p class="footer__title">Давайте дружить, это выгодно!</p>
-          <p class="footer_description">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="footer__description">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
