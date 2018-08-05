@@ -5,7 +5,7 @@ var modal = document.querySelector(".feedback");
 var close = document.querySelector(".feedback__close");
 var focus = modal.querySelector("[name=user-name]");
 
-// открытие формы поиска
+// открытие модального окна
 write.addEventListener("click", function(e) {
   e.preventDefault();
   modal.classList.add("feedback__show");
@@ -13,7 +13,7 @@ write.addEventListener("click", function(e) {
   focus.focus();
 });
 
-// закрытие формы поиска
+// закрытие модального окна
 close.addEventListener("click", function(e) {
   e.preventDefault();
   modal.classList.remove("feedback__show");
