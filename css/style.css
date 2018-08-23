@@ -122,8 +122,7 @@ a {
   text-transform: uppercase;
 
   -webkit-transition: 0.2s;
-
-  transition: 0.2s;
+          transition: 0.2s;
 }
 
 .menu__link:hover,
@@ -205,19 +204,38 @@ a {
 .promo__item--active {
   display: block;
 
-  animation-name: slider;
-  animation-duration: 0.6s;
+  -webkit-animation-name: slider;
+
+          animation-name: slider;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes slider {
+  from {
+    opacity: 0.7;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes slider {
   from {
     opacity: 0.7;
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -255,8 +273,7 @@ a {
   cursor: pointer;
 
   -webkit-transition: 0.3s;
-
-  transition: 0.3s;
+          transition: 0.3s;
 }
 
 .button:hover,
@@ -282,7 +299,6 @@ a {
   margin: 0;
 
   -webkit-transform: translateX(-45px);
-
           transform: translateX(-45px);
 }
 
@@ -687,7 +703,6 @@ a {
   border-radius: 50%;
 
   -webkit-box-shadow: 0 2px 3px 0 rgba(171,171,171,.9);
-
           box-shadow: 0 2px 3px 0 rgba(171,171,171,.9);
   cursor: pointer;
 }
@@ -885,8 +900,7 @@ a {
   text-transform: uppercase;
 
   -webkit-transition: 0.2s;
-
-  transition: 0.2s;
+          transition: 0.2s;
 }
 
 .sorting__link:hover,
@@ -942,7 +956,6 @@ a {
   position: relative;
 
   -ms-flex-preferred-size: 360px;
-
       flex-basis: 360px;
   margin-bottom: 26px;
 }
@@ -1045,8 +1058,7 @@ a {
   border-radius: 2px;
 
   -webkit-transition: 0.2s;
-
-  transition: 0.2s;
+          transition: 0.2s;
 }
 
 .pagination__link:hover,
@@ -1248,7 +1260,6 @@ a {
   background-color: #fff;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
   -webkit-box-shadow: 0 15px 40px 8px #5e5f5f;
           box-shadow: 0 15px 40px 8px #5e5f5f;
@@ -1258,7 +1269,6 @@ a {
   display: block;
 
   -webkit-animation-name: show;
-
           animation-name: show;
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -1325,7 +1335,6 @@ a {
   border-radius: 3px;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
 }
 
@@ -1358,8 +1367,7 @@ a {
   opacity: 0.3;
 
   -webkit-transition: 0.5s;
-
-  transition: 0.5s;
+          transition: 0.5s;
 }
 
 .feedback__close:hover .feedback__close-icon {
